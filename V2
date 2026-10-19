@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">body {
+  margin: 0;
+  background: #f8f9fd;
+  font-family: "Lora", serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #555b7a;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 50px 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 0;
+}
+
+h1 { font-size: 40px; font-weight: 900; color: #555b7a; }
+h2 { font-size: 28px; font-weight: 400; color: #8fc995; }
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #6c63e0;
+  text-decoration: none;
+}
+
+.button:hover { text-decoration: underline; }
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="card">
+        <h1>Hello, I'm Prénom 😎</h1>
+        <img class="avatar" src="https://via.placeholder.com/150" alt="Ma photo de profil">
+        <p>
+          J'aime Github, le UX/UI Design, le développement web et les voyages ✈️.
+          Je suis en formation chez Le Wagon pour apprendre à coder 🌍.
+        </p>
+        <a class="button" href="https://www.lewagon.com" target="_blank">Discover Le Wagon</a>
+      </div>
+
+      <div class="card">
+        <h2>UX/UI Design 📐</h2>
+        <p>Je suis passionné(e) par le <strong>UX/UI Design</strong>.</p>
+      </div>
+
+      <div class="card">
+        <h2>Frontend Development 💻</h2>
+        <p>Je suis passionné(e) par le <strong>Frontend Development</strong>.</p>
+      </div>
+
+    </div>
+  </body>
+</html>
