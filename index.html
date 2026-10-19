@@ -1,37 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My profile</title>
+    <meta name="description" content="Profil d'Océane">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
 
       <div class="card">
-        <h1>Hello, I'm Prénom 😎</h1>
-        <img class="avatar" src="https://via.placeholder.com/150" alt="Ma photo de profil">
+        <h1>Hello, I'm Océane 😎</h1>
+        <img class="avatar" src="avatar.svg" alt="Ma photo de profil">
         <p>
-          J'aime Github, le UX/UI Design, le développement web et les voyages ✈️.
-          Je suis en formation chez Le Wagon pour apprendre à coder 🌍.
+          J'aime la mode 👗, le marketing, la communication et créer des univers qui ont du style.
+          Je suis en formation chez Le Wagon pour apprendre à coder et construire mes propres sites 🌍.
         </p>
         <a class="button" href="https://www.lewagon.com" target="_blank">Discover Le Wagon</a>
       </div>
 
       <div class="card">
-        <h2>UX/UI Design 📐</h2>
-        <p>Je suis passionné(e) par le <strong>UX/UI Design</strong>.</p>
+        <h2>Marketing 📈</h2>
+        <p>Je suis passionnée par le <strong>marketing</strong> : comprendre ce que veulent les gens et leur donner envie.</p>
       </div>
 
       <div class="card">
-        <h2>Frontend Development 💻</h2>
-        <p>Je suis passionné(e) par le <strong>Frontend Development</strong>.</p>
+        <h2>Communication 💬</h2>
+        <p>Je suis passionnée par la <strong>communication</strong> : trouver les bons mots et la bonne image pour raconter une marque.</p>
       </div>
 
     </div>
+
+    <footer class="footer">
+      <a href="https://www.linkedin.com/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
   </body>
 </html>
 body {
@@ -57,8 +72,10 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
   margin-top: 0;
 }
 
@@ -82,4 +99,23 @@ h2 { font-size: 28px; font-weight: 400; color: #8fc995; }
   text-decoration: none;
 }
 
-.button:hover { text-decoration: underline; }
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.button:hover { color: #8fc995; }
+
+.footer {
+  text-align: center;
+  padding: 20px 0 40px;
+}
+
+.footer a {
+  color: #555b7a;
+  font-size: 28px;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover { color: #6c63e0; }
